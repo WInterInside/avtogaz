@@ -1,0 +1,21 @@
+.btn {
+  min-width: 200px;
+  background-color: $red;
+  border: none;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  min-height: 40px;
+  margin: 0 auto;
+  padding-top: 2px;
+  text-decoration: none;
+  font-weight: normal;
+  cursor: pointer;
+  transition: 0.4s;
+
+  &:hover {
+    background-color: $white;
+    color: $red;
+    transition: 0.4s;
+  }
+}
