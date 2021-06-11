@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+  z-index: 1;
   height: 100vh;
   width: 100%;
   padding-bottom: 60px;
@@ -9,10 +11,35 @@
   // background-image: url("../img/hero-bg.png");
   // background-position: top center;
   // background-repeat: no-repeat;
+  // background-size: cover;
 }
 
+// .header__gradient {
+//   position: absolute;
+//   z-index: -1;
+//   top: 0;
+//   left: 0;
+//   height: 30%;
+//   width: 100%;
+//   background: rgb(227,246,254);
+//   background: linear-gradient(180deg, rgba(227,246,254,1) 49%, rgba(255,255,255,1) 100%);
+// }
+
 .header__link {
+  position: relative;
   margin-right: 50px;
+}
+
+.header__logo {
+  max-width: none;
+}
+
+.header__logotext {
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  top: 25px;
+  left: 90px;
 }
 
 .header__wrapper {

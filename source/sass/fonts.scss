@@ -1,13 +1,36 @@
-// @font-face {
-//   font-family: "Blacker";
-//   font-style: normal;
-//   font-weight: 400;
-//   src: url("../fonts/Blacker.woff2") format("woff2"), url("../fonts/Blacker.woff") format("woff");
-// }
+@font-face {
+    font-family: 'MullerBlack';
+    src: url('../fonts/MullerBlack.woff2') format('woff2'),
+        url('../fonts/MullerBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
 
-// @font-face {
-//   font-family: "Inter";
-//   font-style: normal;
-//   font-weight: 400;
-//   src: url("../fonts/Inter.woff2") format("woff2"), url("../fonts/Inter.woff") format("woff");
-// }
+
+@font-face {
+    font-family: 'MullerBold';
+    src: url('../fonts/MullerBold.woff2') format('woff2'),
+        url('../fonts/MullerBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MullerMedium';
+    src: url('../fonts/MullerMedium.woff2') format('woff2'),
+        url('../fonts/MullerMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MullerRegular';
+    src: url('../fonts/MullerRegular.woff2') format('woff2'),
+        url('../fonts/MullerRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
