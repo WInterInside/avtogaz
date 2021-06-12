@@ -1,0 +1,30 @@
+.bid {
+  display: flex;
+  margin-bottom: 55px;
+}
+
+.bid__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.bid__form {
+  margin-right: 35px;
+}
+
+.bid__input {
+  border: none;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 22px;
+  padding-left: 17px;
+  margin-right: -5px;
+  box-shadow: inset 7px 7px 16px 1px rgba(0,0,0,0.1);
+
+  &::placeholder {
+    font-family: 'MullerRegular';
+    font-size: 14px;
+    line-height: 24px;
+    color: #1b212b;
+  }
+}

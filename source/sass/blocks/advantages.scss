@@ -1,0 +1,49 @@
+.advantages__list {
+  @include list-style();
+  font-size: 15px;
+  width: 450px;
+  margin-left: 250px;
+}
+
+.advantages__item {
+  display: flex;
+  margin-bottom: 28px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.advantages__discription {
+
+}
+
+.advantages__icon {
+  align-self: center;
+  min-width: 60px;
+  min-height: 60px;
+  margin-right: 20px;
+  border-radius: 50%;
+  background-color: #ffffff;
+
+  &--tachometer {
+    background-image: url("../img/svg/tachometer.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 35px;
+  }
+
+  &--tank {
+    background-image: url("../img/svg/oil-tank.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 35px;
+  }
+
+  &--filter {
+    background-image: url("../img/svg/filter.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 35px;
+  }
+}

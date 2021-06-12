@@ -18,7 +18,7 @@
     <include src="build/img/sprite.svg"></include>
   </div> -->
   <header class="header">
-    <div class="container container--header">
+    <div class="container">
       <div class="header__wrapper">
         <a href="#" class="header__link">
           <picture>
@@ -30,26 +30,28 @@
         </a>
         <div class="contacts">
           <address class="contacts__address">
-            <a class="contacts__link" target="_blank"  href="https://goo.gl/maps/KpQ5J6zg7jBVBQEw5">
+            <a class="contacts__link" target="_blank"  href="https://yandex.ru/maps/146/simferopol/house/ulitsa_geroyev_adzhimushkaya_2/Z00Ydg5mSEMAQFpufXV0cX1jYg==/?ll=34.096167%2C44.950107&z=16.99" rel="nofollow">
               г. Симферополь, <br>
               ул. г. Аджимушкая, 5/15 кв 2
             </a>
           </address>
-          <div class="contacts___wrapper">
-            <a class="contacts__link contacts__phone" href="tel:+7(978)730-80-58">+7 (978) 730-80-58 </a>
-            <a class="contacts__link contacts__askcall" href="#">Заказать звонок</a>
+          <div class="contacts__wrapper">
+            <a class="contacts__phone" href="tel:+7(978)730-80-58" rel="nofollow">+7 (978) 730-80-58 </a>
+            <a class="contacts__askcall" href="#">Заказать звонок</a>
           </div>
         </div>
         <section class="navigation">
-          <ul class="navigation__list">
-          </ul>
+          <ul class="navigation__list"></ul>
           <div class="navigation__menu">
+            <div class="navigation__line"></div>
             <div class="navigation__line"></div>
             <div class="navigation__line"></div>
           </div>
         </section>
       </div>
     </div>
+  </header>
+  <main class="main">
     <section class="hero">
       <div class="container">
         <h1 class="hero__name">Доставим <span class="hero__name hero__name--colored">газ</span></h1>
@@ -61,27 +63,27 @@
       </div>
       <div class="bid container">
         <form class="bid__form" action="https://echo.htmlacademy.ru" method="get">
-          <div class="bid__wraper">
+          <div class="bid__wrapper">
             <label class="bid__label bid__label--tel"><span class="bid__name visually-hidden">Телефон:*</span>
-              <input class="bid__input bid__input--tel"  type="tel" name="tel" placeholder="+7 (___) ___-__-__" pattern="8\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" required="">
+              <input class="bid__input bid__input--tel"  type="tel" name="tel" placeholder="+7 (___) ___-__-__"  required="">
             </label>
             <button class="btn" type="submit">Отправить заявку</button>
           </div>
         </form>
-        <a class="btn">Расчитать стоимость</a>
+        <a class="btn btn--link">Расчитать стоимость заправки</a>
       </div>
       <div class="advantages container">
         <ul class="advantages__list">
           <li class="advantages__item">
-            <div class="advantages__icon"></div>
+            <div class="advantages__icon advantages__icon--tachometer"></div>
             <p class="advantages__discription">Заполним газгольдер по счетчику и выдадим чек на месте.</p>
           </li>
           <li class="advantages__item">
-            <div class="advantages__icon"></div>
+            <div class="advantages__icon advantages__icon--tank"></div>
             <p class="advantages__discription">Доставка осуществляется в  зимний период за 1-2 дня, в летний - в течение дня.</p>
           </li>
           <li class="advantages__item">
-            <div class="advantages__icon"></div>
+            <div class="advantages__icon  advantages__icon--filter"></div>
             <p class="advantages__discription">Газ проходит фильтрацию перед доставкой. Вы получите газ без примесей серы, воды и масла</p>
           </li>
         </ul>
@@ -103,15 +105,12 @@
             </p>
             <img src="../img/object.png" alt="">
           </div>
-          <a href="#" class="btn">отправить заявку</a>
+          <a href="#" class="btn btn--link">отправить заявку</a>
         </div>
       </section>
     </section>
-  </header>
-  <main class="main">
   </main>
-  <footer class="footer container">
-    <p style="text-align: center;">это футер / 2021</p>
+  <footer class="footer">
   </footer>
   <script src="js/script.js"></script>
 </body>

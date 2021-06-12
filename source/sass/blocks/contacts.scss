@@ -1,0 +1,65 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+
+
+  @media (min-width: 890px) {
+    width: 100%;
+    flex-direction: row;
+  }
+}
+
+.contacts__address {
+  margin-right: auto;
+  margin-left: 0;
+  margin-bottom: 25px;
+
+  font-family: 'MullerRegular';
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+
+  @media (min-width: 890px) {
+    margin-left: 55px;
+    margin-bottom: 0;
+  }
+}
+
+.contacts__link {
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-right: 25px;
+  margin-left: 0;
+
+  @media (min-width: 890px) {
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+}
+
+.contacts__phone {
+  font-family: 'MullerBold';
+  font-size: 16px;
+  line-height: 25px;
+  color: #2a579c;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.contacts__askcall {
+  text-align: left;
+  font-family: 'MullerRegular';
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+  color: #e41a22;
+
+  @media (min-width: 890px) {
+    text-align: right;
+  }
+}
