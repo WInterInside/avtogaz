@@ -14,16 +14,20 @@ menu.addEventListener('click', function() {
 });
 
 $(document).ready(function($) {
-  $('.tab_content').hide();
-  $('.tab_content:first').show();
-  $('.tabs li:first').addClass('active');
-  $('.tabs li').click(function(event) {
-    $('.tabs li').removeClass('active');
+  $('.objects__content').hide();
+  $('.objects__content:first').show();
+  $('.objects__tabs li:first').addClass('active');
+  $('.objects__tabs li').click(function(event) {
+    $('.objects__tabs li').removeClass('active');
     $(this).addClass('active');
-    $('.tab_content').hide();
+    $('.objects__content').hide();
 
     var selectTab = $(this).find('a').attr("href");
 
     $(selectTab).fadeIn();
   });
+});
+
+$(function(){
+  $("#phone").mask("+7 (999) 999-99-99");
 });
