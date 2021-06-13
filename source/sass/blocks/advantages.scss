@@ -1,13 +1,30 @@
+.advantages {
+  position: relative;
+  z-index: 1;
+}
+
 .advantages__list {
   @include list-style();
+
+  @media (max-width: 586px) {
+    width: 100%;
+    margin: 0;
+  }
+
   font-size: 15px;
   width: 450px;
-  margin-left: 250px;
+  margin-left: 50px;
+
+
+  @media (min-width: 1160px) {
+    margin-left: 250px;
+  }
 }
 
 .advantages__item {
   display: flex;
-  margin-bottom: 28px;
+  align-items: center;
+  margin-bottom: 18px;
 
   &:last-child {
     margin-bottom: 0;
@@ -15,7 +32,28 @@
 }
 
 .advantages__discription {
+  margin: 0;
 
+  &--tachometer {
+  @media (max-width: 586px) {
+    padding: 0;
+  }
+    padding-right: 150px;
+  }
+
+  &--tank {
+  @media (max-width: 586px) {
+    padding: 0;
+  }
+    padding-right: 80px;
+  }
+
+  &--filter {
+  @media (max-width: 586px) {
+    padding: 0;
+  }
+    padding-right: 50px;
+  }
 }
 
 .advantages__icon {

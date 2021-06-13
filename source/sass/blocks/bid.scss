@@ -1,15 +1,33 @@
 .bid {
+  position: relative;
   display: flex;
+  flex-direction: column;
   margin-bottom: 55px;
+  z-index: 2;
+
+  @media (min-width: 1176px) {
+    flex-direction: row;
+  }
 }
 
 .bid__wrapper {
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  @media (min-width: 1176px) {
+    margin: 0;
+  }
 }
 
 .bid__form {
-  margin-right: 35px;
+  margin-right: 0;
+
+  @media (min-width: 1176px) {
+    margin-right: 35px;
+  }
 }
 
 .bid__input {

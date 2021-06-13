@@ -1,7 +1,11 @@
 .contacts {
+  @media (max-width: 586px) {
+    display: flex;
+    flex-direction: row;
+  }
+
   display: flex;
   flex-direction: column;
-
 
   @media (min-width: 890px) {
     width: 100%;
@@ -10,6 +14,20 @@
 }
 
 .contacts__address {
+  @media (max-width: 586px) {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin-right: 15px;
+    font-size: 0;
+
+    background-image: url("../img/svg/map.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 35px;
+  }
+
   margin-right: auto;
   margin-left: 0;
   margin-bottom: 25px;
@@ -26,11 +44,31 @@
 }
 
 .contacts__link {
+  @media (max-width: 586px) {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
   white-space: nowrap;
   text-decoration: none;
 }
 
 .contacts__wrapper {
+  @media (max-width: 586px) {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin: 0;
+
+    background-image: url("../img/svg/phone.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 35px;
+  }
+
   display: flex;
   flex-direction: column;
   margin-right: 25px;
@@ -43,6 +81,10 @@
 }
 
 .contacts__phone {
+  @media (max-width: 586px) {
+    font-size: 0;
+  }
+
   font-family: 'MullerBold';
   font-size: 16px;
   line-height: 25px;
@@ -52,6 +94,10 @@
 }
 
 .contacts__askcall {
+  @media (max-width: 586px) {
+    font-size: 0;
+  }
+
   text-align: left;
   font-family: 'MullerRegular';
   font-size: 14px;

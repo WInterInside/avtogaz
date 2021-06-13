@@ -1,4 +1,7 @@
 .navigation {
+  @media (max-width: 586px) {
+    display: none;
+  }
   position: relative;
   display: flex;
   justify-content: space-between;
